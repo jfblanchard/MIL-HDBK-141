@@ -1,9 +1,5 @@
 # MIL-HDBK-141: Modernized Edition
 
-> [!NOTE]
-> **Work in progress.** The text, equations and tables are complete; most figures are still being
-> redrawn and appear as "TBD" boxes in the PDF. See [Status](#status).
-
 <p align="center">
   <a href="https://github.com/jfblanchard/MIL-HDBK-141/blob/master/build/MIL-HDBK-141.pdf"><kbd><img src="docs/img/cover.png" alt="MIL-HDBK-141 cover, Department of Defense, 5 October 1962" width="280"></kbd></a>
 </p>
@@ -17,8 +13,9 @@ every display equation in LaTeX, and regenerates the figures with real optics
 tooling (ray tracing and matplotlib), then
 renders the whole work as a single searchable PDF.
 
-**This is an unofficial derivative work.** It is a transcription, not an authoritative
-copy. For anything safety-, contractual-, or regulatory-critical, verify against the
+**This is an unofficial derivative work, and a work in progress:** most figures are still
+being redrawn and appear as "TBD" boxes in the PDF. It is a transcription, not an
+authoritative copy. For anything safety-, contractual-, or regulatory-critical, verify against the
 original scans in `docs/scans/`; those PDFs are the ground truth, always.
 
 **Quick links:** [read the PDF](https://github.com/jfblanchard/MIL-HDBK-141/blob/master/build/MIL-HDBK-141.pdf) (opens in your browser) · [lost-gems catalog](https://github.com/jfblanchard/MIL-HDBK-141/blob/master/analysis/LOST_GEMS_CATALOG.md) · [original 1962 scans](https://github.com/jfblanchard/MIL-HDBK-141/tree/master/docs/scans)

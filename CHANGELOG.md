@@ -7,7 +7,7 @@
 - Scripts no longer hardcode local tool or repo paths: `ocr_pipeline.py` finds tesseract/pdftoppm on PATH
   (override with `TESSERACT_CMD` / `PDFTOPPM`), `cleanup_ocr.py` and `cross_diff.py` resolve paths from the repo,
   and `build/lens_designs/run.py` falls back to `OPTILAND_SRC`.
-- README: work-in-progress note at the top; service-history line now reads "in service until 1986".
+- README: work-in-progress note in the opening disclaimer; service-history line now reads "in service until 1986".
 - Added MIT `LICENSE`; README License section notes the original handbook is a public-domain U.S. Government work.
 
 ## 2026-10-27
