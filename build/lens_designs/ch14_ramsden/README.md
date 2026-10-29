@@ -1,0 +1,5 @@
+# ch14 Ramsden eyepiece
+- **Source:** MIL-HDBK-141 (1962) ch14, Table 14.2 and Figure 14.4 (p.14-4).
+- **Input:** c = 0, -0.5712, 0.5077, 0 /cm; t = 0.297, 2.116, 0.424 cm, field stop 0.6733 cm; glass 517645; exit pupil 5 mm at 1.187 cm; mm in the model.
+- **Drawn** (book style, `BOOK_QUALITY_RECIPE.md`; vector `.pdf` + 600 dpi `.png`): `ch14_ramsden_layout`, Fig 14.4 redrawn in the book's orientation (exit pupil left, light travelling toward the eye), 4.8 in wide at true scale: axial pair through the 5 mm exit pupil and the 15 deg chief ray, field stop outside the field lens with the book's 1.187 and 0.673 cm distances, surfaces 1-6 numbered as in `build()` (1 = exit pupil, 2-5 lenses, 6 = field stop), 5 mm bar.
+- **OptiLand vs book:** EFL book 25.400 mm / OptiLand 25.395 mm (diff -0.00462 mm); field stop past last surface book 6.733 mm / OptiLand 6.731 mm (diff -0.00155 mm); sum P book -0.3677 /cm / OptiLand -0.3677 /cm (diff +7.07e-06 /cm); gamma = -1/(f sum P) book 1.070 / OptiLand 1.071 (diff +0.000927); exit pupil imaged to (objective at f_o = 254 mm past field stop) book 254.0 mm / OptiLand 254.2 mm (diff +0.184 mm).

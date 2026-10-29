@@ -1,0 +1,70 @@
+# JetBrains / DataSpell
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Rasterized intermediates (regenerable from scans; keep repo lean)
+ocr_output/**/page-*.png
+# OCR cleanup backups (originals already in git history)
+ocr_output/backup/
+# Spot-check rasterized PNGs (regenerable)
+verification/ch*_spot/
+# Hermes temp
+.hermes-tmp*/
+
+# Transient orchestration artifacts (logs, one-off launcher scripts, agent json out)
+.claude_*.json
+.claude_*.log
+*.log
+launch_*.sh
+# Regenerable spot-check rasterizations (kept out of history)
+verification/*.png
+verification/ch*_pages/
+verification/p*_*.png
+verification/*_band*.png
+
+# Deep-pass scratch page rasters (regenerable from scans)
+verification/ch*_deep/
+# Transient orchestration start-SHA marker
+.pipeline_*_start_sha
+.hermes/activity.log
+
+# Personal workflow / agent machinery — kept locally, not published
+HANDOFF*.md
+CLAUDE.md
+STATUS.md
+PROJECT_STATUS.md
+MEMORY.md
+task_rerender.md
+devins_tasks/
+docs/work_log/
+.devin_vision/
+.claude/
+.hermes/
+.*.out.json
+*launch_*.sh
+pipeline/coordinator_brief_*.md
+pipeline/cascade_prompt_*.md
+pipeline/eval_review_*.md
+pipeline/premium_guardian.sh
+verification/claude_transcript.md
+verification/BRIEFING_verify.md
+exchanges/*_prompt.md
+exchanges/*brief*.md
+exchanges/pickup-*.md
+exchanges/*.out.json
+
+# Python virtual environments
+.venv/
