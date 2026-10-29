@@ -1,13 +1,17 @@
 # MIL-HDBK-141: Modernized Edition
 
+> [!NOTE]
+> **Work in progress.** The text, equations and tables are complete; most figures are still being
+> redrawn and appear as "TBD" boxes in the PDF. See [Status](#status).
+
 <p align="center">
   <a href="https://github.com/jfblanchard/MIL-HDBK-141/blob/master/build/MIL-HDBK-141.pdf"><kbd><img src="docs/img/cover.png" alt="MIL-HDBK-141 cover, Department of Defense, 5 October 1962" width="280"></kbd></a>
 </p>
 
 A faithful, machine-readable modernization of **MIL-HDBK-141, "Optical Design" (1962)**, the
 U.S. military's 500+ page optical design handbook and a standard reference for
-optical engineers from the 1960s through the 1980s (in service until its 1986
-cancellation notice, and still circulated among designers today). This project
+optical engineers from the 1960s through the 1980s (in service until 1986,
+and still circulated among designers today). This project
 transcribes the full text into corrected, page-referenced Markdown, rebuilds
 every display equation in LaTeX, and regenerates the figures with real optics
 tooling (ray tracing and matplotlib), then
