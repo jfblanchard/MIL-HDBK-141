@@ -8,6 +8,7 @@
   (override with `TESSERACT_CMD` / `PDFTOPPM`), `cleanup_ocr.py` and `cross_diff.py` resolve paths from the repo,
   and `build/lens_designs/run.py` falls back to `OPTILAND_SRC`.
 - README: work-in-progress note in the opening disclaimer; service-history line now reads "in service until 1986".
+- README: Optiland mentions link to the project; figure status now says no rebuilds are in the PDF yet (drafts await manual verification).
 - Added MIT `LICENSE`; README License section notes the original handbook is a public-domain U.S. Government work.
 
 ## 2026-10-27

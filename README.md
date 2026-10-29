@@ -13,8 +13,8 @@ every display equation in LaTeX, and regenerates the figures with real optics
 tooling (ray tracing and matplotlib), then
 renders the whole work as a single searchable PDF.
 
-**This is an unofficial derivative work, and a work in progress:** most figures are still
-being redrawn and appear as "TBD" boxes in the PDF. It is a transcription, not an
+**This is an unofficial derivative work, and a work in progress:** figures are still being
+redrawn and verified, and appear as "TBD" boxes in the PDF. It is a transcription, not an
 authoritative copy. For anything safety-, contractual-, or regulatory-critical, verify against the
 original scans in `docs/scans/`; those PDFs are the ground truth, always.
 
@@ -27,7 +27,7 @@ original scans in `docs/scans/`; those PDFs are the ground truth, always.
 | `docs/scans/` | Original 1962 scans, one PDF per chapter, the authoritative source |
 | `ocr_output/` | Corrected per-chapter Markdown (ch00–ch28) |
 | `build/` | LaTeX sources + rendered `MIL-HDBK-141.pdf` (~584 pp, 1,543 display equations) |
-| `build/lens_designs/` | Per-figure OptiLand ray-tracing systems and matplotlib scripts |
+| `build/lens_designs/` | Per-figure [Optiland](https://github.com/optiland/optiland) ray-tracing systems and matplotlib scripts |
 | `analysis/` | `LOST_GEMS_CATALOG.md`: 6k-line index of every concept, equation, and table |
 | `pipeline/` | OCR, cleanup, and table-reconciliation scripts |
 | `verification/` | Equation-verification scripts, figure audit, QA reports |
@@ -57,7 +57,7 @@ through all of these:
    26 not independently verifiable).
 5. **Figure audit & regeneration.** All 529 figure blocks were inventoried
    (`verification/FIGURE_AUDIT.md`); specs were drafted with Gemini flash-class VLMs.
-   Figures are being rebuilt, not image-copied: schematics as true-scale OptiLand
+   Figures are being rebuilt, not image-copied: schematics as true-scale [Optiland](https://github.com/optiland/optiland)
    ray-traced constructions, data plots as matplotlib with measured curves traced
    from the scans. Per-figure status: `verification/OPTiLAND_BATCH_MANIFEST.md`.
 6. **Render.** Pandoc + pdflatex (`build/build_pdf.py`) assembles the book PDF.
@@ -73,7 +73,7 @@ It is deliberately kept *out* of the printed book. The public audit trail lives 
 (per-commit history).
 
 **Known limitations.** This is a work in progress, transcription errors may
-remain, and most of the figures are still TBD (the PDF prints their
+remain, and the figures are still TBD (the PDF prints their
 locations as framed boxes). A handful need extra work because the book
 doesn't print the optical prescriptions they require; none are guessed. Open
 defects are tracked in the verification reports and changelog.
@@ -105,14 +105,15 @@ python3 build/build_pdf.py ch05 ch20 # or selected chapters
 ```
 
 Requires pandoc, a TeX distribution (pdflatex), and Python 3. Figure regeneration
-additionally uses OptiLand and matplotlib (see `build/lens_designs/`).
+additionally uses [Optiland](https://github.com/optiland/optiland) and matplotlib (see `build/lens_designs/`).
 
 ## Status
 
 Full-corpus text capture is complete: OCR, validation, gems catalog, LaTeX
-transcription, and PDF render are all done. Most figures are still TBD; their
-locations print in the PDF as framed boxes while the redraws are made and
-checked against the scans. See `CHANGELOG.md` for
+transcription, and PDF render are all done. No rebuilt figures are in the PDF yet;
+their locations print as framed boxes. About 75 redraws are drafted in
+`build/lens_designs/` and go into the PDF only after manual verification
+against the scans. See `CHANGELOG.md` for
 per-commit history and the `verification/` reports for detail.
 
 ## License
