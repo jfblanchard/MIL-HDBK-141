@@ -1240,14 +1240,14 @@ used for informal performance estimation across cameras and sensors.
 ring at $Z = 3.83$, so $d = (3.83\lambda/\pi)(\ell'/Y_e) = 1.22\,\lambda\ell'/Y_e$; and $Z_{G+D} = \sqrt{Z_G^2 + Z_D^2}$
 (page 9-8), given as the way to "estimate the energy concentration" when the geometrical curve crosses the
 diffraction curve (Fig 9.3). Arithmetic check: $3.83/\pi = 1.219$, and with $D = 2Y_e$ this is
-$2.44\,\lambda\ell'/D = 2.44\,\lambda\,(f/\#)$, so the gem's $Z_D = 2.44\lambda f/\#$ is the correct diameter of the
+$2.44\,\lambda\ell'/D = 2.44\,\lambda\,(f/N)$, so the gem's $Z_D = 2.44\lambda f/N$ is the correct diameter of the
 first dark ring.
 Supplements: (i) the formula is on page 9-8 (the definition of $Z$ starts on 9-7), not 9-7 alone. (ii) In the
 book $Z_G$, $Z_D$, $Z_{G+D}$ are spot diameters in $Z$ units ($Z \propto d$), so the quadrature works equally in
 microns. (iii) The book does not say at which energy level to combine. Reading Fig 9.3 at 300 dpi, the dashed
 "Estimated Actual Image" curve is reproduced to within about 10% in $Z$ by applying the quadrature at equal
 percent energy (60%: $Z_G \approx 4.5$, $Z_D \approx 1.85$ give 4.9, curve about 4.9; 70%: 5.85 and 2.1 give 6.2,
-curve about 6.4; 40%: 1.1 and 1.4 give 1.8, curve about 1.95). So $Z_D = 2.44\lambda f/\#$ is right only at the
+curve about 6.4; 40%: 1.1 and 1.4 give 1.8, curve about 1.95). So $Z_D = 2.44\lambda f/N$ is right only at the
 first-dark-ring (about 84%) level; compare it with the geometric diameter that encloses the same fraction.
 (iv) The quadrature-versus-convolution caveat is standard practice, not ch09 text.
 
@@ -3952,7 +3952,7 @@ For reflective and catadioptric systems, the chapter derives the fundamental com
 The useful coma-limited field of view of a paraboloidal mirror (where resolution across
 the field meets the Rayleigh diffraction limit) is:
 
-$$v = \frac{(f/a)^2}{25} = \frac{(f/\#)^2}{25} \quad \text{(inches)}$$
+$$v = \frac{(f/a)^2}{25} = \frac{(f/N)^2}{25} \quad \text{(inches)}$$
 
 where $v$ is the linear size (diameter) of the useful field in inches, $f$ is the focal length, and $a$ is the aperture diameter.
 
@@ -3961,7 +3961,7 @@ Three confirmation points from the chapter:
 - f/10 mirror $\rightarrow$ useful field = $10^2/25 = 4.00\text{ inches}$ (confirmed in text)
 - Mt. Palomar f/3.3, 200-inch ($f = 660\text{ in}$) $\rightarrow$ useful field = $3.3^2/25 = 0.44\text{ inch}$ ($\approx 0.002\text{ rad} \approx 7\text{ arcmin}$, resolving better than $0.025\text{ arcsec}$)
 
-Field scales as $(f/\#)^2$ because tangential coma grows linearly with field angle and inversely with $(f/\#)^2$. Doubling the f/# quadruples the usable linear field.
+Field scales as $(f/N)^2$ because tangential coma grows linearly with field angle and inversely with $(f/N)^2$. Doubling the f/# quadruples the usable linear field.
 
 **When to use it:**
 - Estimating useful field of a new paraboloid or Newtonian reflector without ray tracing
@@ -3976,12 +3976,12 @@ tells you whether a catadioptric corrector is needed.
 
 **Accuracy / caveats:**
 - Assumes pure paraboloid with stop at mirror; catadioptric correctors change the limit
-- Formula is in inches; field scales as $(f/\#)^2$ regardless of units — normalize from
+- Formula is in inches; field scales as $(f/N)^2$ regardless of units — normalize from
   these data points for SI use
 - **Validation note (2026-09-12):** re-deriving from the coma-vs-Airy-disk criterion stated
-  in the text gives a linear field that scales as $(f/\#)^3$, not $(f/\#)^2$ — the worked
+  in the text gives a linear field that scales as $(f/N)^3$, not $(f/N)^2$ — the worked
   examples only confirm the $F^2/25$ arithmetic, not the underlying derivation. The rule is
-  still used as-is (it matches the historical text and similar $(f/\#)^2$ rules appear
+  still used as-is (it matches the historical text and similar $(f/N)^2$ rules appear
   elsewhere in amateur/professional telescope literature with denominators in the 9–25
   range), but treat it as unverified pending a check of the full derivation on the scan.
 
