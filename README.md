@@ -117,3 +117,9 @@ transcription, and PDF render are all done. Most figures are still TBD; their
 locations print in the PDF as framed boxes while the redraws are made and
 checked against the scans. See `CHANGELOG.md` for
 per-commit history and the `verification/` reports for detail.
+
+## License
+
+The original 1962 handbook (including the scans in `docs/scans/`) is a U.S. Government
+work and is in the public domain. Everything added here (transcriptions, corrections,
+the gems catalog, figure rebuilds, and code) is MIT licensed; see [LICENSE](LICENSE).
